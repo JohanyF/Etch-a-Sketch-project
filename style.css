@@ -4,19 +4,34 @@
    box-sizing: border-box;
 }
 
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 48px;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 16px 32px;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+    background-color: lightgray;
+    border: 5px ridge darkgrey;
+}
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 16px;
-}
-
-.buttons {
-    display: flex;
+    gap: 8px;
 }
 
 .sidebar {
-    outline: 1px solid blue;
     min-width: 300px;
     display: flex;
     flex-direction: column;
@@ -26,7 +41,7 @@
 }
 
 .sketch {
-    outline: 1px solid red;
-    min-width: 900px;
-    height: 600px;
+    border: 20px ridge grey;
+    min-width: 580px;
+    height: 580px;
 }
