@@ -31,3 +31,14 @@ const colorGridBlack = () => {
     })
 };
 
+const colorPicker = () => {
+    const color = document.querySelector("#color");
+    const cols = document.querySelectorAll(".col");
+
+    cols.forEach((col) => {
+        col.addEventListener("mouseover", (event) => {
+            event.target.style.background = color.value;
+        })
+    })
+}
+
