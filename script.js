@@ -61,3 +61,13 @@ const rainbowMode = () => {
     })
 };
 
+const eraser = () => {
+    const cols = document.querySelectorAll(".col");
+
+    cols.forEach((col) => {
+        col.addEventListener("mouseover", (event) => {
+            event.target.style.background = 'white';
+        })
+    })
+};
+
