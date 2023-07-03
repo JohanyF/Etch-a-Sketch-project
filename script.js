@@ -42,3 +42,22 @@ const colorPicker = () => {
     })
 }
 
+const random = (number) => {
+    return Math.floor(Math.random() * number);
+};
+
+const randomColor = () => {
+    const color = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
+    return color;
+};
+
+const rainbowMode = () => {
+    const cols = document.querySelectorAll(".col");
+
+    cols.forEach((col) => {
+        col.addEventListener("mouseover", (event) => {
+            event.target.style.background = randomColor();
+        })
+    })
+};
+
