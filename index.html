@@ -7,18 +7,19 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <script></script>
         <h1>Etch-a-Sketch</h1>
         <div class="container">
             <div class="sidebar">
-                <button>Color</button>
-                <button>Rainbow mode</button>
-                <button>Eraser</button>
-                <button>Clear</button>
+                <button id="black">Black</button>
+                <button>Color <input type="color" id="color"></button>
+                <button id="rainbow">Rainbow mode</button>
+                <button id="eraser">Eraser</button>
+                <button id="clear">Clear</button>
+                <button><input type="range" id="slide" min="2" max="64" step="1" value="16"><div class="grid-size">16x16</div></button>
             </div>
             <div class="sketch">
-                <div></div>
             </div>
         </div>
+        <script src="script.js"></script>
     </body>
 </html>
