@@ -71,3 +71,28 @@ const eraser = () => {
     })
 };
 
+const clearColor = () => {
+    const cols = document.querySelectorAll(".col");
+
+    cols.forEach(col => col.style.background = 'white');
+};
+
+const removeGrid = () => {
+   while(sketch.hasChildNodes()) {
+    sketch.removeChild(sketch.firstChild);
+   }
+};
+
+const updateGridSizeText = (gridSize) => {
+    const gridSizeSelector = document.querySelector(".grid-size");
+    gridSizeSelector.textContent = `${gridSize}x${gridSize}`;
+};
+
+const changeGrid = () => {
+    const gridSizeNumber = document.querySelector("#slide").value;
+    if(sketch.hasChildNodes()){
+        removeGrid();
+    }
+    updateGridSizeText(gridSizeNumber);
+    createGrid(gridSizeNumber);
+}
