@@ -96,3 +96,13 @@ const changeGrid = () => {
     updateGridSizeText(gridSizeNumber);
     createGrid(gridSizeNumber);
 }
+
+
+createGrid(16);
+
+blackBtn.addEventListener("click", colorGridBlack);
+colorBtn.addEventListener("click", colorPicker);
+rainbowBtn.addEventListener("click", rainbowMode);
+eraserBtn.addEventListener("click", eraser);
+clearBtn.addEventListener("click", clearColor);
+slider.addEventListener("change", changeGrid);
